@@ -5,6 +5,7 @@
 - Visual Studio>=2017;
 - pybind11
 - cmake
+- vnpy CTP版本：v6.7.2_20230913
 
 安装cmake[下载地址](https://cmake.org/download/ )
 
@@ -94,6 +95,6 @@ pybind11-stubgen vnctptd -o .
 
 有存根文件和没存根的区别：vnctpmd没有存根，vnctptd有存根，如图：
 
-![cungen](.\cungen.png)
+![cungen](https://github.com/Nilotica/vnctp-auto-build/blob/main/cungen.png)
 
 #### QQ交流群：446042777(澄明期货研究)
