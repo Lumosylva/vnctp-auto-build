@@ -73,11 +73,11 @@ MdApi Version:v6.7.2_20230913 10:48:10.4926
 TdApi Version:v6.7.2_20230913 10:48:10.4926
 ```
 
-### getApiVersion函数
+### 关于getApiVersion
 
-本项目中使用.cpp源文件和.h头文件：vnctpmd.h、vnctpmd.cpp、vnctptd.h、vnctptd.cpp文件
+本项目中使用.cpp源文件和.h头文件：vnctpmd.h、vnctpmd.cpp、vnctptd.h、vnctptd.cpp为添加getApiVersion函数后的文件，
 
-其中添加了getApiVersion函数，便于在Python中调用CTP API时可以调用获取API版本的函数
+因为在原始文件中没有getApiVersion函数，为了便于在Python示例代码中调用CTP API时可以调用获取API版本的函数，在这些文件中添加了getApiVersion函数。
 
 ### 4. 生成vnctpmd和vnctptd存根
 
