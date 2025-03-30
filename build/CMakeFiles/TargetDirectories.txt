@@ -1,0 +1,4 @@
+D:/Project/vnctp-auto-build/build/CMakeFiles/vnctpmd.dir
+D:/Project/vnctp-auto-build/build/CMakeFiles/vnctptd.dir
+D:/Project/vnctp-auto-build/build/CMakeFiles/ALL_BUILD.dir
+D:/Project/vnctp-auto-build/build/CMakeFiles/ZERO_CHECK.dir

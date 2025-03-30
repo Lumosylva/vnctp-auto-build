@@ -1,0 +1,10 @@
+^D:\PROJECT\VNCTP-AUTO-BUILD\BUILD\CMAKEFILES\AAECEF1AC4269A433D45109E1DC09092\GENERATE.STAMP.RULE
+setlocal
+D:\tools\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/Project/vnctp-auto-build -BD:/Project/vnctp-auto-build/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Project/vnctp-auto-build/build/vnctp-auto-build.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
