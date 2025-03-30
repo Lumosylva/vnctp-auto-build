@@ -32,11 +32,13 @@ pip install pybind11
 
 ### 3. 使用
 
-将vnctpmd.pyd 和 vnctptd.pyd 复制出来， 和 thostmduserapi_se.dll thosttraderapi_se.dll 放在同一目录。
+见demo目录下，将vnctpmd.pyd 和 vnctptd.pyd 复制出来， 和 thostmduserapi_se.dll thosttraderapi_se.dll 放在同一目录，新建vnctp_demo.py
 
 ```python
 from vnctpmd import MdApi
 from vnctptd import TdApi
+
+
 md = MdApi()
 td = TdApi()
 print(type(md))
@@ -48,6 +50,27 @@ print(type(td))
 ```
 <class 'vnctpmd.MdApi'>
 <class 'vnctptd.TdApi'>
+```
+
+新建get_api_version.py
+
+```python
+from vnctpmd import MdApi
+from vnctptd import TdApi
+
+
+md = MdApi()
+td = TdApi()
+
+print("MdApi Version:" + md.getApiVersion())
+print("TdApi Version:" + td.getApiVersion())
+```
+
+输出：
+
+```
+MdApi Version:v6.7.2_20230913 10:48:10.4926
+TdApi Version:v6.7.2_20230913 10:48:10.4926
 ```
 
 ### getApiVersion函数
