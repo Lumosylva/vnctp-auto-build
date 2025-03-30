@@ -95,6 +95,8 @@ activate python312
 pip install pybind11-stubgen
 ```
 
+pybind11-stubgen是一个将`.pyi` 文件生成基础存根的库，这样用户在导入模块时，PyCharm和VSCode等工具可以自动识别这些存根，提供类型提示。如果使用构建工具如uv、poetry的脚本功能，可以通过setup.py添加自定义命令来运行pybind11-stubgen，可以将 `pybind11-stubgen` 的存根生成步骤集成到项目的构建流程中，并通过 **`pyproject.toml`** 和 **`setup.py`**配置实现自动化。
+
 #### 将vnctpmd.pyd和vnctptd.pyd所在路径设置到Python路径中
 
 ```bash
